@@ -1,4 +1,5 @@
-# Previsão a necessidade de leitos de UTI com Machine Learnig.
+# Prevendo necessidade de leitos de UTI com Machine Learnig 🏥
+> Projeto Final do Bootcamp de Data Science da Alura
 
 ## 1- Introdução
 
@@ -20,3 +21,26 @@ A variável resposta e se o paciente foi ou não para UTI.
 ## 3- Tratamento dos Dados
 
 Antes de começar a utilizar os modelos foi feito um tratamento da base. No notebook de limpeza é mostrado com foi feito esse tratamento. Embora existam informações de várias janelas de tempo para cada paciente, após a limpeza foram mantidas apenas informações da primeira janela. Embora isso diminua a acurácia do modelo, isso simula uma situação com mais utilidade prática para o hospital, que é determinar em um curto período de tempo se existirá uma demanda por leito de UTI, permitindo assim um melhor planejamento para uma eventual necessidade de transferência.
+
+## 4 - Metodologia
+
+São utilizados dois diferentes modelos de mahcine learning da biblioteca Scikit-learn. Para os dois modelos é feito um grid search, que nada mais é que uma busca exaustiva ao longo de várias combinações de hiperparâmetros, de forma a encontrar a melhor delas. A métrica utilizada para definir o melhor modelo é o AUC. Para cada combinação também é feito o cross validation, com o método Repeated Stratified K Fold. Nesse processo, o número de divisões dos dados escolhido foi de 5, o que ocorria 5 vezes, de forma a mitigar os efeitos da aleatoriedade.
+
+## 5 - Resultados
+
+Os melhores resultados encontrados pelo grid search para cada um dos modelos foram:
+
+- Logistic Regression com AUC médio de 0,768
+- Random Forest com AUC médio de 0,793
+
+Vale destacar também que o Random Forest apresentou menos variâncias nos resutlados
+
+## 6- Conclusão
+
+Implementamos modelos de machine learning para tentar prever a necessidade de um leito de UTI a partir de características individuais de pacientes. Dos dois modelos testados, o Random Forest se mostrou levemente melhor que o Logistic Regression. Ainda assim, como se trata de um problema envolvendo vidas humanas os resultados não são bons o suficiente para implementação nos hospitais. Esse projeto possui algumas limitações:
+
+* quantidade de dados é pequena;
+* grid search não foi tão amplo por conta de limitações computacionais;
+* apenas dois modelos diferentes foram testados.
+
+Trabalhos futuros podem lidar com essas limitações para obter resultados superiores, e talvez, se tornaram viáveis para implementação em hospitais.

@@ -5,7 +5,7 @@
 
 Uma das grandes preocupações durante a pandemia da COVID-19 foi sobrecarga nos sistemas de saúde, que afetou a disponibilidade de leitos de UTI nos hospitais. Pensando nisso a equipe de Data Intelligence do hospital Sírio-Libanês disponibilizou uma base de dados de pacientes com COVID-19 no [Kaggle](https://www.kaggle.com/S%C3%ADrio-Libanes/covid19) para o desenvolvimento de modelos de machine learning capazes de prever se pacientes necessitarão ou não de um leito de UTI com base em informações individuais.
 
-O presente prejeto apresenta a implementação de dois modelos distintos da biblioteca [Scikit-learn](https://scikit-learn.org/stable/), o Logistic Regression e Random Forest para fazer essas predições. Foram feitas buscas dos hiperparâmetros que otimizassem ambos os modelos e os resultados apontoram uma ligeira vantagem do Random Forest em relação ao Logistic Regression.
+O presente prejeto apresenta a implementação de dois modelos distintos da biblioteca [Scikit-learn](https://scikit-learn.org/stable/), o Logistic Regression e Random Forest para fazer essas predições. Foram feitas buscas dos hiperparâmetros que otimizassem ambos os modelos e os resultados apontaram uma ligeira vantagem do Random Forest em relação ao Logistic Regression.
 
 ## 2- Dados
 
@@ -20,7 +20,7 @@ A variável resposta é se o paciente foi ou não para UTI.
 
 ## 3- Tratamento dos Dados
 
-Antes de começar a utilizar os modelos foi feito um tratamento da base. No notebook de limpeza é mostrado com foi feito esse tratamento. Embora existam informações de várias janelas de tempo para cada paciente, após a limpeza foram mantidas apenas informações da primeira janela. Embora isso diminua a acurácia do modelo, isso simula uma situação com mais utilidade prática para o hospital, que é determinar em um curto período de tempo se existirá uma demanda por leito de UTI, permitindo assim um melhor planejamento para uma eventual necessidade de transferência.
+Antes de começar a utilizar os modelos foi feito um tratamento da base. No notebook de limpeza é mostrado como foi feito esse tratamento. Embora existam informações de várias janelas de tempo para cada paciente, após a limpeza foram mantidas apenas informações da primeira janela. Embora isso diminua a acurácia do modelo, isso simula uma situação com mais utilidade prática para o hospital, que é determinar em um curto período de tempo se existirá uma demanda por leito de UTI, permitindo assim um melhor planejamento para uma eventual necessidade de transferência.
 
 ## 4 - Metodologia
 
@@ -33,7 +33,7 @@ Os melhores resultados encontrados pelo grid search para cada um dos modelos for
 - Logistic Regression com AUC médio de 0,768
 - Random Forest com AUC médio de 0,793
 
-Vale destacar também que o Random Forest apresentou menos variâncias nos resutlados
+Vale destacar também que o Random Forest apresentou menos variâncias nos resultados
 
 ## 6- Conclusão
 

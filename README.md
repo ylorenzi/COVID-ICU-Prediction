@@ -42,7 +42,7 @@ Vale destacar também que o Random Forest apresentou menos variância nos result
 
 ## 6- Conclusão
 
-Implementamos modelos de machine learning com objetivo de prever a necessidade de um leito de UTI a partir de características individuais de pacientes. Dos dois modelos testados, o Random Forest se mostrou marginalmente superior ao Logistic Regression. Ainda assim, como se trata de um problema envolvendo vidas humanas os resultados não são bons o suficiente para implementação nos hospitais. Esse projeto possui algumas limitações:
+Implementamos modelos de machine learning com objetivo de prever a necessidade de um leito de UTI a partir de características individuais de pacientes. Dos dois modelos testados, o Random Forest se mostrou marginalmente superior ao Logistic Regression. Ainda assim, como se trata de um problema envolvendo vidas humanas, os resultados não são bons o suficiente para implementação nos hospitais. Esse projeto possui algumas limitações:
 
 * o tamanho da base de dados é pequeno;
 * o grid search não foi tão amplo por conta de limitações computacionais;

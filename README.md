@@ -1,9 +1,11 @@
 # Prevendo necessidade de leitos de UTI com Machine Learnig 🏥
 > Projeto Final do Bootcamp de Data Science da Alura
 
+![](https://www.klsmartin.com/uploads/Thumbnail_marWorld_ICU_1920x820_01.jpg)
+
 ## 1- Introdução
 
-Uma das grandes preocupações durante a pandemia da COVID-19 foi sobrecarga nos sistemas de saúde, que afetou a disponibilidade de leitos de UTI nos hospitais. Pensando nisso a equipe de Data Intelligence do hospital Sírio-Libanês disponibilizou uma base de dados de pacientes com COVID-19 no [Kaggle](https://www.kaggle.com/S%C3%ADrio-Libanes/covid19) para o desenvolvimento de modelos capazes de prever se pacientes necessitarão ou não de um leito de UTI.
+Uma das grandes preocupações durante a pandemia da COVID-19 foi sobrecarga nos sistemas de saúde, que afetou a disponibilidade de leitos de UTI nos hospitais. Pensando nisso, a equipe de Data Intelligence do hospital Sírio-Libanês disponibilizou uma base de dados de pacientes com COVID-19 no [Kaggle](https://www.kaggle.com/S%C3%ADrio-Libanes/covid19) para o desenvolvimento de modelos capazes de prever se pacientes necessitarão ou não de um leito de UTI.
 
 O presente prejeto apresenta a implementação de dois modelos distintos de machine learning da biblioteca [Scikit-learn](https://scikit-learn.org/stable/): o Logistic Regression e Random Forest. Foram realizadas buscas dos hiperparâmetros que otimizassem os modelos e os resultados finais apontaram uma ligeira vantagem do Random Forest em relação ao Logistic Regression.
 
@@ -27,7 +29,7 @@ O resultado ao final da limpeza foi uma base de dados com 352 pacientes e 98 fea
 
 ## 4 - Metodologia
 
-São utilizados dois diferentes modelos de mahcine learning da biblioteca Scikit-learn. Para os dois modelos foi feito um grid search, que nada mais é que uma busca exaustiva ao longo de várias combinações de hiperparâmetros, de forma a encontrar a melhor combinação. A métrica utilizada para definir o melhor modelo é o área sob a curva da curva ROC (AUC). Para cada combinação também é feito o cross validation, com o método Repeated Stratified K Fold. Para o cross validation o número de divisões dos dados escolhido foi de 5, com cinco repetições do processo, de forma a mitigar os efeitos da aleatoriedade.
+São utilizados dois diferentes modelos de machine learning da biblioteca Scikit-learn. Para os dois modelos foi feito um grid search, que nada mais é que uma busca exaustiva ao longo de várias combinações de hiperparâmetros, de forma a encontrar a melhor combinação. A métrica utilizada para definir o melhor modelo é o área sob a curva da curva ROC (AUC). Para cada combinação também é feito o cross validation, com o método Repeated Stratified K Fold. Para o cross validation o número de divisões dos dados escolhido foi de 5, com cinco repetições do processo, de forma a mitigar os efeitos da aleatoriedade.
 
 ## 5 - Resultados
 
